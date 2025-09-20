@@ -178,7 +178,7 @@
 //                 value={notes}
 //                 onChange={(e) => setNotes(e.target.value)}
 //                 className="w-full px-4 py-2 bg-gray-100 rounded-lg"
-//                 placeholder="Anything else the provider should know..."
+//                 placeholder="numberthing else the provider should know..."
 //               />
 //             </div>
 
@@ -526,7 +526,7 @@
 //                   value={notes}
 //                   onChange={(e) => setNotes(e.target.value)}
 //                   className="w-full px-4 py-2 bg-gray-100 rounded-lg"
-//                   placeholder="Anything else the provider should know..."
+//                   placeholder="numberthing else the provider should know..."
 //                 />
 //               </div>
 
@@ -889,7 +889,7 @@
 //                   value={notes}
 //                   onChange={(e) => setNotes(e.target.value)}
 //                   className="w-full px-4 py-2 bg-gray-100 rounded-lg"
-//                   placeholder="Anything else the provider should know..."
+//                   placeholder="numberthing else the provider should know..."
 //                 />
 //               </div>
 
@@ -1128,7 +1128,7 @@
 
 //     console.log("✅ Request saved successfully");
 //     setStep(3);
-//   } catch (error: any) {
+//   } catch (error: number) {
 //     console.error("❌ Error adding document:", error.code, error.message);
 //     alert(`Failed to save request: ${error.message}`);
 //   }
@@ -1350,7 +1350,7 @@
 //                   value={notes}
 //                   onChange={(e) => setNotes(e.target.value)}
 //                   className="w-full px-4 py-2 bg-gray-100 rounded-lg"
-//                   placeholder="Anything else the provider should know..."
+//                   placeholder="numberthing else the provider should know..."
 //                 />
 //               </div>
 
@@ -1689,7 +1689,7 @@
 //       }
       
 //       // Construct the data to be saved to Firestore
-//       const requestData: Record<string, any> = {
+//       const requestData: Record<string, number> = {
 //         issueType: issueType.includes("Others")
 //           ? [...issueType.filter((t) => t !== "Others"), customIssue]
 //           : issueType,
@@ -1718,7 +1718,7 @@
 
 //       console.log("✅ Request saved successfully");
 //       setStep(3);
-//     } catch (error: any) {
+//     } catch (error: number) {
 //       console.error("❌ Error adding document:", error.code, error.message);
 //       alert(`Failed to save request: ${error.message}`);
 //     }
@@ -1991,7 +1991,7 @@
 //                   value={notes}
 //                   onChange={(e) => setNotes(e.target.value)}
 //                   className="w-full px-4 py-2 bg-gray-100 rounded-lg"
-//                   placeholder="Anything else the provider should know..."
+//                   placeholder="numberthing else the provider should know..."
 //                 />
 //               </div>
 
@@ -2291,7 +2291,7 @@
 //         userName: user.displayName||"Not provided"
 //       });
 //       setStep(3);
-//     } catch(err:any) {
+//     } catch(err:number) {
 //       alert("Failed: "+err.message);
 //     }
 //   };
@@ -2599,7 +2599,7 @@ export default function RequestPage() {
         userName: user.displayName || "Not provided"
       });
       setStep(3);
-    } catch (err: any) {
+    } catch (err: number) {
       alert("Failed: " + err.message);
     }
   };
@@ -2897,7 +2897,7 @@ export default function RequestPage() {
 //       });
 
 //       setStep(3);
-//     } catch (err: any) {
+//     } catch (err: number) {
 //       alert("Failed: " + err.message);
 //     }
 //   };
@@ -3256,7 +3256,7 @@ export default function RequestPage() {
 //       });
 
 //       setStep(3);
-//     } catch (error: any) {
+//     } catch (error: number) {
 //       console.error("❌ Error adding document:", error.code, error.message);
 //       alert(`Failed to save request: ${error.message}`);
 //     }
@@ -3473,7 +3473,7 @@ export default function RequestPage() {
 //                   value={notes}
 //                   onChange={(e) => setNotes(e.target.value)}
 //                   className="w-full px-4 py-2 bg-gray-100 rounded-lg"
-//                   placeholder="Anything else the provider should know..."
+//                   placeholder="numberthing else the provider should know..."
 //                 />
 //               </div>
 

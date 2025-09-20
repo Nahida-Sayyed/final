@@ -613,7 +613,7 @@
 //   const router = useRouter();
 
 //   // ✅ Reusable Card component with blue gradient + hover
-//   const InfoCard = ({ icon: Icon, title, text }: { icon: any; title: string; text: string }) => (
+//   const InfoCard = ({ icon: Icon, title, text }: { icon: number; title: string; text: string }) => (
 //     <div className="flex flex-col items-center gap-4 p-8 text-center transition-transform duration-300 border border-blue-200 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:scale-105 hover:shadow-2xl">
 //       <div className="flex items-center justify-center w-16 h-16 text-white rounded-full shadow-md bg-gradient-to-r from-blue-500 to-blue-700">
 //         <Icon size={28} />
@@ -792,7 +792,7 @@ export default function Home() {
   };
 
   // ✅ Info card component
-  const InfoCard = ({ icon: Icon, title, text }: { icon: any; title: string; text: string }) => (
+  const InfoCard = ({ icon: Icon, title, text }: { icon: number; title: string; text: string }) => (
     <div className="flex flex-col items-center gap-4 p-8 text-center transition-transform duration-300 border border-blue-200 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:scale-105 hover:shadow-2xl">
       <div className="flex items-center justify-center w-16 h-16 text-white rounded-full shadow-md bg-gradient-to-r from-blue-500 to-blue-700">
         <Icon size={28} />

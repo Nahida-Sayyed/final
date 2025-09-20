@@ -19,7 +19,7 @@
 //       sig!,
 //       process.env.STRIPE_WEBHOOK_SECRET!
 //     );
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     console.error("Webhook signature verification failed:", err.message);
 //     return new NextResponse(`Webhook Error: ${err.message}`, { status: 400 });
 //   }
@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
   let event: Stripe.Event;
   try {
     event = stripe.webhooks.constructEvent(buf, sig, webhookSecret || "");
-  } catch (err: any) {
+  } catch (err: number) {
     console.error("🚨 Webhook signature verification failed:", err.message);
     return new NextResponse(`Webhook Error: ${err.message}`, { status: 400 });
   }

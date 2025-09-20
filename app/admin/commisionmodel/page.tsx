@@ -129,7 +129,7 @@
 //   const [providerCommission, setProviderCommission] = useState(20);
 //   const [platformCommission, setPlatformCommission] = useState(10);
 //   const [fixedCharge, setFixedCharge] = useState(50);
-//   const [savedModels, setSavedModels] = useState<any[]>([]);
+//   const [savedModels, setSavedModels] = useState<number[]>([]);
 
 //   // Load existing commission models
 //   useEffect(() => {
@@ -295,7 +295,7 @@ export default function CommissionModelPage() {
   const [providerCommission, setProviderCommission] = useState(20);
   const [platformCommission, setPlatformCommission] = useState(10);
   const [fixedCharge, setFixedCharge] = useState(50);
-  const [savedModels, setSavedModels] = useState<any[]>([]);
+  const [savedModels, setSavedModels] = useState<number[]>([]);
 
   // Save commission model locally
   const handleSave = () => {

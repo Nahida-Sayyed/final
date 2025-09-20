@@ -148,7 +148,7 @@
 // ];
 
 // // ✅ Fixed download function
-// async function downloadReceipt(item: any) {
+// async function downloadReceipt(item: number) {
 //   try {
 //     const response = await fetch("/api/generate-receipt", {
 //       method: "POST",
@@ -301,7 +301,7 @@
 // const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
 // // Stripe payment handler
-// async function handleStripePayment(item: any) {
+// async function handleStripePayment(item: number) {
 //   try {
 //     const stripe = await stripePromise;
 //     if (!stripe) throw new Error("Stripe failed to load");
@@ -321,14 +321,14 @@
 //     if (result.error) {
 //       alert(result.error.message);
 //     }
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     console.error(err);
 //     alert(err.message || "Payment failed. Try again.");
 //   }
 // }
 
 // // PDF download
-// async function downloadReceipt(item: any) {
+// async function downloadReceipt(item: number) {
 //   try {
 //     const response = await fetch("/api/generate-receipt", {
 //       method: "POST",
@@ -486,7 +486,7 @@
 // // ✅ Stripe client-side handler
 // const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
-// async function handleStripePayment(item: any) {
+// async function handleStripePayment(item: number) {
 //   try {
 //     const stripe = await stripePromise;
 //     if (!stripe) throw new Error("Stripe failed to load");
@@ -508,14 +508,14 @@
 //     if (result.error) {
 //       alert(result.error.message);
 //     }
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     console.error(err);
 //     alert(err.message || "Payment failed. Try again.");
 //   }
 // }
 
 // // ✅ PDF download
-// async function downloadReceipt(item: any) {
+// async function downloadReceipt(item: number) {
 //   try {
 //     const response = await fetch("/api/generate-receipt", {
 //       method: "POST",
@@ -666,7 +666,7 @@
 // ];
 
 // // ✅ Corrected downloadReceipt function
-// async function downloadReceipt(item: any) {
+// async function downloadReceipt(item: number) {
 //   try {
 //     // Map your item to API expected structure
 //     const requestBody = {
@@ -810,7 +810,7 @@
 // import Header from "@/components/Header";
 
 // // ✅ Stripe demo function
-// async function handleStripePayment(item: any) {
+// async function handleStripePayment(item: number) {
 //   try {
 //     // Call API to create a Stripe session
 //     const response = await fetch("/api/create-stripe-session", {
@@ -840,7 +840,7 @@
 // ];
 
 // // ✅ Download receipt function
-// async function downloadReceipt(item: any) {
+// async function downloadReceipt(item: number) {
 //   try {
 //     const response = await fetch("/api/generate-receipt", {
 //       method: "POST",
@@ -946,7 +946,7 @@
 // import Header from "@/components/Header";
 
 // // ✅ Stripe demo function
-// async function handleStripePayment(item: any) {
+// async function handleStripePayment(item: number) {
 //   try {
 //     // Demo Stripe checkout link (replace with real session if needed)
 //     const demoCheckoutUrl = `https://buy.stripe.com/test_4gw7tI2Hx1Wke1y6oo`;
@@ -966,7 +966,7 @@
 // ];
 
 // // ✅ Download receipt function
-// async function downloadReceipt(item: any) {
+// async function downloadReceipt(item: number) {
 //   try {
 //     const response = await fetch("/api/generate-receipt", {
 //       method: "POST",
@@ -1070,7 +1070,7 @@
 // import Header from "@/components/Header";
 
 // // ✅ Stripe payment function
-// async function handleStripePayment(item: any) {
+// async function handleStripePayment(item: number) {
 //   try {
 //     const response = await fetch("/api/checkout", {
 //       method: "POST",
@@ -1096,7 +1096,7 @@
 // }
 
 // // ✅ Receipt download function
-// async function downloadReceipt(item: any) {
+// async function downloadReceipt(item: number) {
 //   try {
 //     const response = await fetch("/api/generate-receipt", {
 //       method: "POST",
@@ -1211,7 +1211,7 @@ import BottomNav from "@/components/BottomNav";
 import Header from "@/components/Header";
 
 // Helper: start Stripe checkout for a given payment doc
-async function handleStripePayment(item: any) {
+async function handleStripePayment(item: number) {
   try {
     const res = await fetch("/api/checkout", {
       method: "POST",
@@ -1234,14 +1234,14 @@ async function handleStripePayment(item: any) {
     }
     // Redirect to Stripe checkout page
     window.location.href = data.url;
-  } catch (err: any) {
+  } catch (err: number) {
     console.error("Stripe checkout error:", err);
     alert(`Payment initialization failed: ${err.message}`);
   }
 }
 
 // Helper: download a PDF receipt
-async function downloadReceipt(item: any) {
+async function downloadReceipt(item: number) {
   try {
     const response = await fetch("/api/generate-receipt", {
       method: "POST",
@@ -1267,7 +1267,7 @@ async function downloadReceipt(item: any) {
 }
 
 export default function HistoryPage() {
-  const [historyData, setHistoryData] = useState<any[]>([]);
+  const [historyData, setHistoryData] = useState<number[]>([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 

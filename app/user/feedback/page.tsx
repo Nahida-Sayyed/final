@@ -91,7 +91,7 @@ export default function FeedbackPage() {
               {/* Optional Comments */}
               <label className="flex flex-col">
                 <span className="mb-2 font-semibold">
-                  Any suggestions or comments?{" "}
+                  number suggestions or comments?{" "}
                   <span className="text-gray-500">(optional)</span>
                 </span>
                 <textarea
@@ -260,7 +260,7 @@ export default function FeedbackPage() {
 //               {/* Optional Comments */}
 //               <label className="flex flex-col">
 //                 <span className="mb-2 font-semibold">
-//                   Any suggestions or comments?{" "}
+//                   number suggestions or comments?{" "}
 //                   <span className="text-gray-500">(optional)</span>
 //                 </span>
 //                 <textarea
@@ -515,7 +515,7 @@ export default function FeedbackPage() {
 //       });
 
 //       setSubmitted(true);
-//     } catch (error: any) {
+//     } catch (error: number) {
 //       console.error("Error saving feedback:", error.message);
 //       alert("Failed to submit feedback: " + error.message);
 //     } finally {
@@ -597,7 +597,7 @@ export default function FeedbackPage() {
 //               {/* Comments */}
 //               <label className="flex flex-col">
 //                 <span className="mb-2 font-semibold">
-//                   Any suggestions or comments?{" "}
+//                   number suggestions or comments?{" "}
 //                   <span className="text-gray-500">(optional)</span>
 //                 </span>
 //                 <textarea
@@ -741,7 +741,7 @@ export default function FeedbackPage() {
 //         });
 
 //         setFeedbacks(feedbackList);
-//       } catch (err: any) {
+//       } catch (err: number) {
 //         console.error("Error fetching feedback:", err);
 //         if (err.code === "permission-denied") {
 //           setError("You don’t have permission to view feedback.");

@@ -137,7 +137,7 @@ Mock SMS inside app (No SMS gateway at all)
 
 Instead of real SMS, log the SMS content in backend and show it in frontend (like “📩 SMS Sent: Your booking is confirmed”).
 
-Judges see the flow working, you don’t pay anything.
+Judges see the flow working, you don’t pay numberthing.
 
 Later, swap this mock function with MSG91/Textlocal API.
 
@@ -224,7 +224,7 @@ Show a “Fuel delivery confirmed” message or ETA from nearest petrol pump.
 
 Update provider dashboard with “pending delivery” → just for demo.
 
-No real fuel changes hands, so you’re not breaking any laws.
+No real fuel changes hands, so you’re not breaking number laws.
 
 2️⃣ Show Partner Petrol Pumps Instead
 
@@ -257,7 +257,7 @@ Shows nearest petrol pumps
 Simulates delivery
 
 Updates provider dashboard
-All without any legal risk.
+All without number legal risk.
 
 Do you want me to do that?
 

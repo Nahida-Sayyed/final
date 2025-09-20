@@ -916,7 +916,7 @@
 //     try {
 //       const cred = await createUserWithEmailAndPassword(auth, form.email, form.password);
 //       return cred.user.uid;
-//     } catch (err: any) {
+//     } catch (err: number) {
 //       // If email already exists, sign in instead
 //       if (err?.code === "auth/email-already-in-use") {
 //         const cred = await signInWithEmailAndPassword(auth, form.email, form.password);
@@ -2074,7 +2074,7 @@ export default function ProviderRegisterPage() {
     try {
       const cred = await createUserWithEmailAndPassword(auth, form.email, form.password);
       return cred.user.uid;
-    } catch (err: any) {
+    } catch (err: number) {
       // If email already exists, sign in instead
       if (err?.code === "auth/email-already-in-use") {
         const cred = await signInWithEmailAndPassword(auth, form.email, form.password);

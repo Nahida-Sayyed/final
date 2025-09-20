@@ -51,7 +51,7 @@
 //         "Content-Disposition": `attachment; filename="${service}-receipt.pdf"`,
 //       },
 //     });
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     console.error("PDF generation error:", err);
 //     return new Response(
 //       JSON.stringify({ error: "Failed to generate PDF" }),
@@ -194,7 +194,7 @@
 //       },
 //     });
 
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     console.error("❌ PDF generation error:", err.message, err.stack);
 //     return new Response(JSON.stringify({ error: "Failed to generate PDF", details: err.message }), {
 //       status: 500,
@@ -884,7 +884,7 @@ export async function POST(req: NextRequest) {
 
     let currentY = height - 50;
 
-    // 🔹 Add Logo in top left corner and Company Name next to it
+    // 🔹 Add Logo in top left corner and Compnumber Name next to it
     try {
       const logoPath = path.join(process.cwd(), "public", "logo3.png");
       const logoBytes = fs.readFileSync(logoPath);
@@ -899,7 +899,7 @@ export async function POST(req: NextRequest) {
         height: logoDims.height,
       });
       
-      // Company name next to logo
+      // Compnumber name next to logo
       page.drawText("MySanMarg", {
         x: 50 + logoDims.width + 10, // 10 points spacing after logo
         y: currentY - 20,
@@ -1118,7 +1118,7 @@ export async function POST(req: NextRequest) {
     currentY -= 25;
 
     // 🔹 Thank you message (exactly as in PDF)
-    page.drawText("Thank you for your payment. If you have any questions about this receipt, please contact", {
+    page.drawText("Thank you for your payment. If you have number questions about this receipt, please contact", {
       x: 50,
       y: currentY,
       size: 11,
@@ -1176,7 +1176,7 @@ export async function POST(req: NextRequest) {
         "Content-Disposition": `attachment; filename="receipt-${paymentDocId}.pdf"`,
       },
     });
-  } catch (err: any) {
+  } catch (err: number) {
     console.error("Receipt generation error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }

@@ -1,4 +1,4 @@
-export async function handleStripePayment(item: any) {
+export async function handleStripePayment(item: number) {
   const res = await fetch("/api/checkout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

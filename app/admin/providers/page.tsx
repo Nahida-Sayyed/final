@@ -5,11 +5,11 @@
 // import { collection, onSnapshot, doc, updateDoc } from "firebase/firestore";
 
 // export default function AdminProviders() {
-//   const [providers, setProviders] = useState<Array<any>>([]);
+//   const [providers, setProviders] = useState<Array<number>>([]);
 
 //   useEffect(() => {
 //     const unsub = onSnapshot(collection(db, "users"), (snap) => {
-//       const list: Array<any> = [];
+//       const list: Array<number> = [];
 //       snap.forEach((doc) => {
 //         const data = doc.data();
 //         if (data.roles?.includes("provider")) list.push({ id: doc.id, ...data });

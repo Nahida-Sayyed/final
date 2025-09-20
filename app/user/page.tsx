@@ -901,7 +901,7 @@
 //       setRequestData(updatedData);
       
 //       const displayLocation = locationResult.address || 'Location coordinates received';
-//       addBotMessage(`✅ Location received: ${displayLocation}\n\nGreat! Now I have your location. Is there anything else you'd like to tell me about your situation?`);
+//       addBotMessage(`✅ Location received: ${displayLocation}\n\nGreat! Now I have your location. Is there numberthing else you'd like to tell me about your situation?`);
 //     } else {
 //       addBotMessage(`❌ ${locationResult.error}\n\nNo problem! Please tell me your location manually. For example:\n• "Near City Mall, Pune"\n• "Highway NH8, KM 45"\n• "Opposite Metro Station"`);
 //     }
@@ -1245,7 +1245,7 @@
 //   const openChat = () => {
 //     setIsChatOpen(true);
 //     if (messages.length === 0) {
-//       addBotMessage("Hello! I'm here to help you with roadside assistance. Please describe what help you need in any language - for example: 'fuel problem, car number MH12AB1234' 🤖");
+//       addBotMessage("Hello! I'm here to help you with roadside assistance. Please describe what help you need in number language - for example: 'fuel problem, car number MH12AB1234' 🤖");
       
 //       // Automatically try to get location after 2 seconds
 //       setTimeout(() => {
@@ -1306,7 +1306,7 @@
 //               </div>
 //             </div>
 //             <p className="mt-2 text-sm text-gray-500">
-//               Click the green circle for AI-powered assistance in any language
+//               Click the green circle for AI-powered assistance in number language
 //             </p>
 //           </div>
 //         </div>
@@ -1369,7 +1369,7 @@
 //                 </div>
 //                 <div>
 //                   <h3 className="font-semibold">AI Assistant</h3>
-//                   <p className="text-xs opacity-90">Roadside Help in Any Language</p>
+//                   <p className="text-xs opacity-90">Roadside Help in number Language</p>
 //                 </div>
 //               </div>
 //               <Button
@@ -1425,7 +1425,7 @@
 //                   value={inputMessage}
 //                   onChange={(e) => setInputMessage(e.target.value)}
 //                   onKeyPress={(e) => e.key === 'Enter' && !isSubmitting && handleSendMessage()}
-//                   placeholder="Type your message in any language..."
+//                   placeholder="Type your message in number language..."
 //                   className="flex-1 p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
 //                   disabled={isSubmitting}
 //                 />
@@ -1980,7 +1980,7 @@ export default function UserPage() {
 
   // Enhanced bot response generation with language support
   const generateBotResponse = (data: Partial<RequestData>, isComplete: boolean): string => {
-    const userLanguage = (data as any).detectedLanguage || 'english';
+    const userLanguage = (data as number).detectedLanguage || 'english';
     
     let englishResponse: string;
     
@@ -2490,7 +2490,7 @@ Please try the manual form or contact us directly. Our team is here to help! �
               </div>
             </div>
             <p className="mt-2 text-sm text-gray-500">
-              Click the green circle for AI-powered assistance in any language
+              Click the green circle for AI-powered assistance in number language
             </p>
           </div>
         </div>
@@ -2659,7 +2659,7 @@ Please try the manual form or contact us directly. Our team is here to help! �
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && !isSubmitting && handleSendMessage()}
-                  placeholder="Type your message in any language..."
+                  placeholder="Type your message in number language..."
                   className="flex-1 p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                   disabled={isSubmitting}
                 />

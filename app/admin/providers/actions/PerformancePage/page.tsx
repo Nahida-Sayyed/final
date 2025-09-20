@@ -164,7 +164,7 @@
 //             <select
 //               className="px-3 py-2 border rounded-md"
 //               value={filterType}
-//               onChange={(e) => setFilterType(e.target.value as any)}
+//               onChange={(e) => setFilterType(e.target.value as number)}
 //             >
 //               <option value="All">All Types</option>
 //               <option value="Repair">Repair</option>
@@ -177,7 +177,7 @@
 //             <select
 //               className="px-3 py-2 border rounded-md"
 //               value={filterDate}
-//               onChange={(e) => setFilterDate(e.target.value as any)}
+//               onChange={(e) => setFilterDate(e.target.value as number)}
 //             >
 //               <option value="All">All Dates</option>
 //               <option value="Last7Days">Last 7 Days</option>

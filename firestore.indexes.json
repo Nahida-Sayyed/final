@@ -39,7 +39,7 @@
   //     "collectionGroup": "items",
   //     "queryScope": "COLLECTION_GROUP",
   //     "apiScope": "MONGODB_COMPATIBLE_API",
-  //     "density": "SPARSE_ANY",
+  //     "density": "SPARSE_number",
   //     "multikey": true,
   //     "fields": [
   //       { "fieldPath": "baz", "mode": "ASCENDING" }

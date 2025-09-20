@@ -45,7 +45,7 @@
 // // // Leaflet types
 // // declare global {
 // //   interface Window {
-// //     L: any;
+// //     L: number;
 // //   }
 // // }
 
@@ -65,10 +65,10 @@
   
 // //   // Map reference
 // //   const mapRef = useRef<HTMLDivElement>(null);
-// //   const leafletMapRef = useRef<any>(null);
-// //   const providerMarkerRef = useRef<any>(null);
-// //   const requestMarkersRef = useRef<any[]>([]);
-// //   const radiusCircleRef = useRef<any>(null);
+// //   const leafletMapRef = useRef<number>(null);
+// //   const providerMarkerRef = useRef<number>(null);
+// //   const requestMarkersRef = useRef<number[]>([]);
+// //   const radiusCircleRef = useRef<number>(null);
   
 // //   // For amount input modal
 // //   const [showAmountModal, setShowAmountModal] = useState(false);
@@ -386,7 +386,7 @@
 // //     try {
 // //       const paymentRef = doc(db, "payments", paymentDocId); // Changed from "payment" to "payments"
       
-// //       const updateData: any = {
+// //       const updateData: number = {
 // //         status: newStatus,
 // //         updatedAt: Timestamp.now()
 // //       };
@@ -1155,7 +1155,7 @@
 // // // Leaflet types
 // // declare global {
 // //   interface Window {
-// //     L: any;
+// //     L: number;
 // //   }
 // // }
 
@@ -1175,10 +1175,10 @@
   
 // //   // Map reference
 // //   const mapRef = useRef<HTMLDivElement>(null);
-// //   const leafletMapRef = useRef<any>(null);
-// //   const providerMarkerRef = useRef<any>(null);
-// //   const requestMarkersRef = useRef<any[]>([]);
-// //   const radiusCircleRef = useRef<any>(null);
+// //   const leafletMapRef = useRef<number>(null);
+// //   const providerMarkerRef = useRef<number>(null);
+// //   const requestMarkersRef = useRef<number[]>([]);
+// //   const radiusCircleRef = useRef<number>(null);
   
 // //   // For amount input modal
 // //   const [showAmountModal, setShowAmountModal] = useState(false);
@@ -1616,7 +1616,7 @@
 // //           : (orderToComplete.issueType || orderToComplete.serviceType || "Service"),
 // //         status: "pending",
 // //         updatedAt: Timestamp.now(),
-// //         userId: (orderToComplete as any).uid || "guest"
+// //         userId: (orderToComplete as number).uid || "guest"
 // //       };
 
 // //     //   console.log("Creating payment document:", paymentData);
@@ -2229,7 +2229,7 @@
 // // Leaflet types
 // declare global {
 //   interface Window {
-//     L: any;
+//     L: number;
 //   }
 // }
 
@@ -2249,10 +2249,10 @@
   
 //   // Map reference
 //   const mapRef = useRef<HTMLDivElement>(null);
-//   const leafletMapRef = useRef<any>(null);
-//   const providerMarkerRef = useRef<any>(null);
-//   const requestMarkersRef = useRef<any[]>([]);
-//   const radiusCircleRef = useRef<any>(null);
+//   const leafletMapRef = useRef<number>(null);
+//   const providerMarkerRef = useRef<number>(null);
+//   const requestMarkersRef = useRef<number[]>([]);
+//   const radiusCircleRef = useRef<number>(null);
   
 //   // For amount input modal
 //   const [showAmountModal, setShowAmountModal] = useState(false);
@@ -2730,7 +2730,7 @@
 //         console.log("Payment document created with ID:", paymentDocRef.id);
 //         setMessage("✅ Work completed successfully! Payment request has been created for the customer.");
         
-//       } catch (paymentError: any) {
+//       } catch (paymentError: number) {
 //         console.warn("Could not create payment document:", paymentError);
         
 //         // Check if it's a permissions error
@@ -2745,7 +2745,7 @@
       
 //       setTimeout(() => setMessage(""), 6000);
 
-//     } catch (error: any) {
+//     } catch (error: number) {
 //       console.error("Error completing order:", error);
 //       console.error("Error code:", error.code);
 //       console.error("Error message:", error.message);
@@ -3255,7 +3255,7 @@ interface ProviderLocation {
 // Leaflet types
 declare global {
   interface Window {
-    L: any;
+    L: number;
   }
 }
 
@@ -3275,10 +3275,10 @@ const DashboardPage: React.FC = () => {
   
   // Map reference
   const mapRef = useRef<HTMLDivElement>(null);
-  const leafletMapRef = useRef<any>(null);
-  const providerMarkerRef = useRef<any>(null);
-  const requestMarkersRef = useRef<any[]>([]);
-  const radiusCircleRef = useRef<any>(null);
+  const leafletMapRef = useRef<number>(null);
+  const providerMarkerRef = useRef<number>(null);
+  const requestMarkersRef = useRef<number[]>([]);
+  const radiusCircleRef = useRef<number>(null);
   
   // For amount input modal
   const [showAmountModal, setShowAmountModal] = useState(false);
@@ -3596,7 +3596,7 @@ const DashboardPage: React.FC = () => {
     try {
       const paymentRef = doc(db, "payments", paymentDocId); // Changed from "payment" to "payments"
       
-      const updateData: any = {
+      const updateData: number = {
         status: newStatus,
         updatedAt: Timestamp.now()
       };
@@ -4368,7 +4368,7 @@ export default DashboardPage;
 // // Leaflet types
 // declare global {
 //   interface Window {
-//     L: any;
+//     L: number;
 //   }
 // }
 
@@ -4388,10 +4388,10 @@ export default DashboardPage;
   
 //   // Map reference
 //   const mapRef = useRef<HTMLDivElement>(null);
-//   const leafletMapRef = useRef<any>(null);
-//   const providerMarkerRef = useRef<any>(null);
-//   const requestMarkersRef = useRef<any[]>([]);
-//   const radiusCircleRef = useRef<any>(null);
+//   const leafletMapRef = useRef<number>(null);
+//   const providerMarkerRef = useRef<number>(null);
+//   const requestMarkersRef = useRef<number[]>([]);
+//   const radiusCircleRef = useRef<number>(null);
   
 //   // For amount input modal
 //   const [showAmountModal, setShowAmountModal] = useState(false);

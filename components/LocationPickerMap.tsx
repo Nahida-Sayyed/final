@@ -78,12 +78,12 @@
 //           attribution='&copy; OpenStreetMap contributors'
 //         />
 //        {position !== null && typeof position.lat === "number" && typeof position.lng === "number" && (
-//   <Marker position={position as any} />
+//   <Marker position={position as number} />
 // )}
 
 //         <ClickCapture
 //           onPick={(coords) => {
-//             setPosition(coords as any);
+//             setPosition(coords as number);
 //             onChange(`${coords.lat},${coords.lng}`);
 //           }}
 //           setPos={setPosition}

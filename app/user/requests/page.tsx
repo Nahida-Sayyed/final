@@ -95,7 +95,7 @@
 // // import Header from "@/components/Header";
 
 // // export default function RequestsPage() {
-// //   const [requests, setRequests] = useState<any[]>([]);
+// //   const [requests, setRequests] = useState<number[]>([]);
 // //   const user = auth.currentUser;
 
 // //   useEffect(() => {
@@ -135,7 +135,7 @@
 // //               Request ID: {request.id}
 // //             </h2>
 // //             <div className="space-y-4">
-// //               {request.status.map((s: any, idx: number) => (
+// //               {request.status.map((s: number, idx: number) => (
 // //                 <div
 // //                   key={idx}
 // //                   className="flex items-center pb-2 space-x-4 border-b last:border-0"

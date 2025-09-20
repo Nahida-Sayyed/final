@@ -32,7 +32,7 @@
 //     });
 
 //     return NextResponse.json({ url: session.url });
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     return NextResponse.json({ error: err.message }, { status: 500 });
 //   }
 // }
@@ -73,7 +73,7 @@
 //     });
 
 //     return NextResponse.json({ url: session.url });
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     console.error("Stripe session creation error:", err);
 //     return NextResponse.json({ error: err.message }, { status: 500 });
 //   }
@@ -152,7 +152,7 @@
 //     });
 
 //     return NextResponse.json({ url: session.url });
-//   } catch (err: any) {
+//   } catch (err: number) {
 //     console.error("Checkout error:", err);
 //     return NextResponse.json({ error: err.message }, { status: 500 });
 //   }
@@ -259,7 +259,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ url: session.url });
-  } catch (err: any) {
+  } catch (err: number) {
     console.error("🚨 Checkout error:", err);
     return NextResponse.json(
       { error: err?.message || "Unknown server error" },

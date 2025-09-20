@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
     }));
 
     return NextResponse.json({ payments });
-  } catch (err: any) {
+  } catch (err: number) {
     console.error("Error fetching payments:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
