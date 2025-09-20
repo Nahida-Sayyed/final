@@ -1912,7 +1912,7 @@ export default function UserPage() {
     if (!updatedData.carNumber) {
       // Try both original and English messages for car number
       const carNumberRegex = /(?:car|gadi|गाडी|गाड़ी)?\s*(?:no|number|नंबर)?\s*[:\-]?\s*([A-Z]{2}\s*\d{2}\s*[A-Z]{1,2}\s*\d{4}|[A-Z0-9\s]{6,15})/i;
-      let carNumberMatch = originalMessage.match(carNumberRegex) || englishMessage.match(carNumberRegex);
+      const carNumberMatch = originalMessage.match(carNumberRegex) || englishMessage.match(carNumberRegex);
       if (carNumberMatch) {
         updatedData.carNumber = carNumberMatch[1].trim();
       }

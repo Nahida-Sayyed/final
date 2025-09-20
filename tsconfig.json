@@ -17,6 +17,11 @@
       {
         "name": "next"
       }
+      {
+  "compilerOptions": {
+    "noImplicitAny": false
+  }
+}
     ],
     "paths": {
       "@/*": ["./*"]
